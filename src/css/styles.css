@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
 
 * {
   scroll-behavior: smooth;
@@ -43,9 +43,9 @@
   );
 }
 
+/***** LOGIN PAGE *****/
+
 /* NAVBAR RESPONSIVE */
-
-
 @media only screen and (max-width: 768px) {
   #menu-toggle:checked ~ #menu {
     display: block;
@@ -68,7 +68,7 @@
 }
 /* END NAVBAR RESPONSIVE */
 
-@layer components {
+@layer base {
   /* ANCHOR AND BUTTON */
   .anchor {
     @apply inline-block no-underline hover:text-yellow-400 font-medium text-lg py-2 px-4 lg:-ml-2;
@@ -99,3 +99,5 @@
     @apply absolute left-0 top-0 flex items-center justify-center h-full w-10 text-blue-500 group-hover:text-blue-700;
   }
 }
+
+/***** END LOGIN PAGE *****/
