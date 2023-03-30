@@ -43,6 +43,30 @@
   );
 }
 
+/* NAVBAR RESPONSIVE */
+@media only screen and (max-width: 768px) {
+  #menu-toggle:checked ~ #menu {
+    display: block;
+  }
+
+  #menu-toggle:checked ~ div button {
+    display: none;
+  }
+
+  #menu-toggle:checked {
+    display: none;
+  }
+
+  #menu-toggle:checked ~ #menu div ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 999;
+  }
+}
+/* END NAVBAR RESPONSIVE */
+
 @layer components {
   /* ANCHOR AND BUTTON */
   .anchor {
@@ -55,7 +79,7 @@
     @apply bg-yellow-gradient text-gray-800 p-2 rounded hover:-translate-y-1 hover:text-gray-950 opacity-90 hover:opacity-100;
   }
   .login-facebook-button {
-    @apply relative mt-6 rounded-md py-2 text-sm text-gray-800 bg-gray-300 hover:bg-gray-200 ;
+    @apply relative mt-6 rounded-md py-2 text-sm text-gray-800 bg-gray-300 hover:bg-gray-200;
   }
   .login-button {
     @apply flex items-center justify-center focus:outline-none text-primary text-sm sm:text-base bg-yellow-gradient hover:bg-blue-700 rounded-md py-2 w-full transition duration-150 ease-in
