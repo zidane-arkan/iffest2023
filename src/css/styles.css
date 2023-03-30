@@ -44,6 +44,8 @@
 }
 
 /* NAVBAR RESPONSIVE */
+
+
 @media only screen and (max-width: 768px) {
   #menu-toggle:checked ~ #menu {
     display: block;
@@ -62,7 +64,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    z-index: 999;
   }
 }
 /* END NAVBAR RESPONSIVE */
