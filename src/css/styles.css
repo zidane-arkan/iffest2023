@@ -1,3 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+  transition: 0.3s;
+  font-family: "Poppins";
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.text-gradient {
+  background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #fff0bf 0.89%,
+    #fff4d2 17.23%,
+    #f3df9f 42.04%,
+    #e9ce76 55.12%,
+    #e2c25a 71.54%,
+    #c9a635 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.bg-yellow-gradient,
+.sign-in-button:hover {
+  background: linear-gradient(
+    157.81deg,
+    #fff0bf -43.27%,
+    #fff4d2 -21.24%,
+    #f3df9f 12.19%,
+    #e9ce76 29.82%,
+    #e2c25a 51.94%,
+    #c9a635 90.29%
+  );
+}
+
+@layer components {
+  /* ANCHOR AND BUTTON */
+  .anchor {
+    @apply inline-block no-underline hover:text-yellow-400 font-medium text-lg py-2 px-4 lg:-ml-2;
+  }
+  .sign-in-button {
+    @apply bg-transparent text-white hover:text-gray-800 p-2 rounded mr-4 hover:-translate-y-1 border border-white hover:border-none;
+  }
+  .sign-up-button {
+    @apply bg-yellow-gradient text-gray-800 p-2 rounded hover:-translate-y-1 hover:text-gray-950 opacity-90 hover:opacity-100;
+  }
+  .login-facebook-button {
+    @apply relative mt-6 rounded-md py-2 text-sm text-gray-800 bg-gray-300 hover:bg-gray-200 ;
+  }
+  .login-button {
+    @apply flex items-center justify-center focus:outline-none text-primary text-sm sm:text-base bg-yellow-gradient hover:bg-blue-700 rounded py-2 w-full transition duration-150 ease-in
+    opacity-80 hover:opacity-100;
+  }
+
+  /* INPUT LOGIN */
+  .wrapper-input {
+    @apply inline-flex items-center justify-center absolute left-0 top-0 h-full w-10 text-gray-400;
+  }
+  .input-login {
+    @apply text-sm sm:text-base placeholder-gray-500 pl-10 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-yellow-400;
+  }
+  /* ICON */
+  .facebook-icon {
+    @apply absolute left-0 top-0 flex items-center justify-center h-full w-10 text-blue-500 group-hover:text-blue-700;
+  }
+}

@@ -5,7 +5,225 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- ICON -->
+    <link
+      rel="stylesheet"
+      href="https://kit-pro.fontawesome.com/releases/v5.15.1/css/pro.min.css"
+    />
+
+    <!-- CSS -->
     <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/styles.css" />
   </head>
-  <body></body>
+  <body class="w-full overflow-x-hidden">
+    <header>
+      <nav class="w-full z-30 py-1 bg-secondary shadow-lg">
+        <div class="w-full flex items-center justify-between mt-0 px-6 py-3">
+          <label for="menu-toggle" class="cursor-pointer md:hidden block">
+            <svg
+              class="fill-current text-white"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+            >
+              <title>menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg>
+          </label>
+          <input class="hidden" type="checkbox" id="menu-toggle" />
+          <div
+            class="hidden md:flex md:items-center md:w-auto w-full order-3 md:order-1"
+            id="menu"
+          >
+            <nav>
+              <ul
+                class="md:flex items-center justify-between text-base text-white pt-4 md:pt-0"
+              >
+                <li>
+                  <a class="anchor" href="./index.html">Home</a>
+                </li>
+                <li>
+                  <a class="anchor" href="./benefit.html">Benefit</a>
+                </li>
+                <li>
+                  <a class="anchor" href="./our-team.html">Our Team</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div
+            class="order-2 md:order-3 flex flex-wrap items-center justify-end mr-0 md:mr-4"
+            id="nav-content"
+          >
+            <div class="auth flex items-center w-full md:w-full">
+              <button class="sign-in-button">Sign in</button>
+              <button class="sign-up-button">Sign up</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="w-full h-[100vh] bg-primary px-4 lg:px-0">
+      <div class="min-h-screen flex flex-col items-center justify-center">
+        <div
+          class="flex flex-col bg-secondary shadow-md px-4 sm:px-6 md:px-8 lg:px-10 py-8 rounded-md w-full max-w-md"
+        >
+          <h3
+            class="font-medium self-center text-xl sm:text-2xl uppercase text-gray-100"
+          >
+            Login To Your Account
+          </h3>
+          <button class="login-facebook-button group">
+            <span class="facebook-icon"><i class="fab fa-facebook-f"></i></span>
+            <p>Login with Facebook</p>
+          </button>
+          <div class="relative mt-10 h-px bg-gray-300">
+            <div
+              class="absolute left-0 top-0 flex justify-center items-center w-full -mt-2"
+            >
+              <p
+                class="bg-gray-300 px-4 text-xs text-gray-800 uppercase rounded-md"
+              >
+                Or Login With Email
+              </p>
+            </div>
+          </div>
+
+          <form action="#" class="mt-10">
+            <div class="flex flex-col mb-6">
+              <label
+                for="email"
+                class="mb-1 text-xs sm:text-sm tracking-wide text-gray-100"
+                >E-mail Address:</label
+              >
+              <div class="relative">
+                <div class="wrapper-input">
+                  <svg
+                    class="h-6 w-6"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"
+                    />
+                  </svg>
+                </div>
+
+                <input
+                  id="email"
+                  type="email"
+                  name="email"
+                  class="input-login"
+                  placeholder="E-mail Address"
+                />
+              </div>
+            </div>
+            <div class="flex flex-col mb-6">
+              <label
+                for="password"
+                class="mb-1 text-xs sm:text-sm tracking-wide text-gray-100"
+                >Password:</label
+              >
+              <div class="relative">
+                <div class="wrapper-input">
+                  <span>
+                    <svg
+                      class="h-6 w-6"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+
+                <input
+                  id="password"
+                  type="password"
+                  name="password"
+                  class="input-login"
+                  placeholder="Password"
+                />
+              </div>
+            </div>
+
+            <div class="flex items-center mb-6 -mt-4">
+              <div class="flex ml-auto">
+                <a
+                  href="#"
+                  class="inline-flex text-xs sm:text-sm text-yellow-500 hover:text-yellow-700"
+                  >Forgot Your Password?</a
+                >
+              </div>
+            </div>
+
+            <div class="flex w-full">
+              <button type="submit" class="login-button">
+                <a
+                  href="./index.html"
+                  class="mr-2 uppercase font-semibold flex w-full justify-center items-center"
+                  >Login
+                  <svg
+                    class="h-6 w-6 ml-2"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                    /></svg
+                ></a>
+                <span> </span>
+              </button>
+            </div>
+          </form>
+
+          <div class="flex justify-center items-center mt-6">
+            <a
+              href="./register.html"
+              target="_blank"
+              class="inline-flex items-center font-bold text-white text-xs text-center"
+            >
+              <span>
+                <svg
+                  class="h-6 w-6"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"
+                  />
+                </svg>
+              </span>
+              <p class="ml-2 font-medium">You don't have an account?</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="flex justify-center items-center w-full bg-primary">
+      <p class="uppercase text-white opacity-60 mb-8">
+        ©2023 CodeLift All Rights Reserved
+      </p>
+    </footer>
+  </body>
 </html>
