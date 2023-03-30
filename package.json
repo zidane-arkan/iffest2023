@@ -1,0 +1,22 @@
+{
+  "name": "if-fest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zidane-arkan/iffest2023.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zidane-arkan/iffest2023/issues"
+  },
+  "homepage": "https://github.com/zidane-arkan/iffest2023#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.0"
+  }
+}
