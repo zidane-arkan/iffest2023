@@ -58,7 +58,7 @@
     @apply relative mt-6 rounded-md py-2 text-sm text-gray-800 bg-gray-300 hover:bg-gray-200 ;
   }
   .login-button {
-    @apply flex items-center justify-center focus:outline-none text-primary text-sm sm:text-base bg-yellow-gradient hover:bg-blue-700 rounded py-2 w-full transition duration-150 ease-in
+    @apply flex items-center justify-center focus:outline-none text-primary text-sm sm:text-base bg-yellow-gradient hover:bg-blue-700 rounded-md py-2 w-full transition duration-150 ease-in
     opacity-80 hover:opacity-100;
   }
 
