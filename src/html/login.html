@@ -4,12 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- ICON -->
+    <title>Sign in</title>
+    <!-- FONTAWESOME ICON -->
     <link
       rel="stylesheet"
       href="https://kit-pro.fontawesome.com/releases/v5.15.1/css/pro.min.css"
     />
+
+    <!-- LOGO ICON -->
+    <link rel="shortcut icon" href="../asset/logo.png" type="image/x-icon" />
 
     <!-- CSS -->
     <link href="/dist/output.css" rel="stylesheet" />
@@ -101,20 +104,8 @@
                 >E-mail Address:</label
               >
               <div class="relative">
-                <div class="wrapper-input">
-                  <svg
-                    class="h-6 w-6"
-                    fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"
-                    />
-                  </svg>
+                <div class="wrapper-icon">
+                  <img src="../asset/at.png" alt="email icon" class="h-6 w-6" />
                 </div>
 
                 <input
@@ -133,22 +124,12 @@
                 >Password:</label
               >
               <div class="relative">
-                <div class="wrapper-input">
-                  <span>
-                    <svg
-                      class="h-6 w-6"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
-                      />
-                    </svg>
-                  </span>
+                <div class="wrapper-icon">
+                  <img
+                    src="../asset/locked.png"
+                    alt="password-icon"
+                    class="h-6 w-6"
+                  />
                 </div>
 
                 <input
@@ -199,11 +180,11 @@
             <a
               href="./register.html"
               target="_blank"
-              class="inline-flex items-center font-bold text-white text-xs text-center"
+              class="inline-flex items-center font-bold text-white text-xs text-center "
             >
               <span>
                 <svg
-                  class="h-6 w-6"
+                  class="h-6 w-6 "
                   fill="none"
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -216,7 +197,7 @@
                   />
                 </svg>
               </span>
-              <p class="ml-2 font-medium">You don't have an account?</p>
+              <p class="ml-2 font-medium hover:text-yellow-500 duration-100">You don't have an account?</p>
             </a>
           </div>
         </div>

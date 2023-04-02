@@ -511,7 +511,8 @@ video {
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
-.login-button {
+.login-button,
+  .register-button {
   display: flex;
   width: 100%;
   align-items: center;
@@ -541,27 +542,30 @@ video {
   );
 }
 
-.login-button:hover {
+.login-button:hover,
+  .register-button:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
   opacity: 1;
 }
 
-.login-button:focus {
+.login-button:focus,
+  .register-button:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
 
 @media (min-width: 640px) {
-  .login-button {
+  .login-button,
+  .register-button {
     font-size: 1rem;
     line-height: 1.5rem;
   }
 }
 
-/* INPUT LOGIN */
+/* INPUT LOGIN & REGISTER */
 
-.wrapper-input {
+.wrapper-icon {
   position: absolute;
   left: 0px;
   top: 0px;
@@ -574,7 +578,8 @@ video {
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
-.input-login {
+.input-login,
+  .input-register {
   width: 100%;
   border-radius: 0.5rem;
   border-width: 1px;
@@ -588,17 +593,19 @@ video {
   line-height: 1.25rem;
 }
 
-.input-login::-moz-placeholder {
+.input-login::-moz-placeholder, .input-register::-moz-placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(107 114 128 / var(--tw-placeholder-opacity));
 }
 
-.input-login::placeholder {
+.input-login::placeholder,
+  .input-register::placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(107 114 128 / var(--tw-placeholder-opacity));
 }
 
-.input-login:focus {
+.input-login:focus,
+  .input-register:focus {
   --tw-border-opacity: 1;
   border-color: rgb(250 204 21 / var(--tw-border-opacity));
   outline: 2px solid transparent;
@@ -606,7 +613,8 @@ video {
 }
 
 @media (min-width: 640px) {
-  .input-login {
+  .input-login,
+  .input-register {
     font-size: 1rem;
     line-height: 1.5rem;
   }
@@ -772,6 +780,10 @@ video {
 
 .mb-6 {
   margin-bottom: 1.5rem;
+}
+
+.ml-1 {
+  margin-left: 0.25rem;
 }
 
 .ml-2 {
@@ -1020,6 +1032,14 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.duration-0 {
+  transition-duration: 0s;
+}
+
+.duration-100 {
+  transition-duration: 100ms;
+}
+
 * {
   scroll-behavior: smooth;
   transition: 0.3s;
@@ -1088,9 +1108,19 @@ video {
 
 /***** END LOGIN PAGE *****/
 
+.hover\:text-yellow-500:hover {
+  --tw-text-opacity: 1;
+  color: rgb(234 179 8 / var(--tw-text-opacity));
+}
+
 .hover\:text-yellow-700:hover {
   --tw-text-opacity: 1;
   color: rgb(161 98 7 / var(--tw-text-opacity));
+}
+
+.group:hover .group-hover\:text-yellow-500 {
+  --tw-text-opacity: 1;
+  color: rgb(234 179 8 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {
@@ -1160,12 +1190,21 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:my-8 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
   .lg\:mb-8 {
     margin-bottom: 2rem;
   }
 
   .lg\:mt-12 {
     margin-top: 3rem;
+  }
+
+  .lg\:mt-16 {
+    margin-top: 4rem;
   }
 
   .lg\:p-0 {
@@ -1180,5 +1219,10 @@ video {
   .lg\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .lg\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 }

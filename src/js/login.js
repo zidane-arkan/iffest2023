@@ -1,11 +1,9 @@
-const loginIcon = document.getElementById("login-icon");
-
 const buttonLogin = document.getElementById("login-button");
 const changeIcon = () => {
-  loginIcon.style.display = "none";
   buttonLogin.innerText = "Silahkan tunggu...";
 };
-const redirect = () => {
+const redirect = (e) => {
+  e.preventDefault();
   changeIcon();
   setTimeout(() => {
     window.location.href = "../html/index.html";
