@@ -1,63 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | CodeLift</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link href="../css/index.css" rel="stylesheet" />
+    <link href="../css/styles.css" rel="stylesheet" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home | CodeLift</title>
-  <link href="/dist/output.css" rel="stylesheet" />
-  <link href="../css/index.css" rel="stylesheet" />
-  <link href="../css/styles.css" rel="stylesheet" />
-</head>
+  <body>
+    <header>
+      <nav class="fixed top-0 z-30 w-full py-1 shadow-lg bg-secondary">
+        <div class="flex items-center justify-between w-full px-6 py-3 mt-0">
+          <label for="menu-toggle" class="block cursor-pointer md:hidden">
+            <svg
+              class="text-white fill-current"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+            >
+              <title>menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg>
+          </label>
+          <input class="hidden" type="checkbox" id="menu-toggle" />
+          <div
+            class="hidden w-full md:flex md:items-center md:w-auto md:order-1"
+            id="menu"
+          >
+            <div>
+              <ul
+                class="items-center justify-between pt-4 text-base text-white md:flex md:pt-0"
+              >
+                <li>
+                  <a class="anchor" href="./index.html">Home</a>
+                </li>
+                <li>
+                  <a class="anchor" href="./benefit.html">Benefit</a>
+                </li>
+                <li>
+                  <a class="anchor" href="./our-team.html">Our Team</a>
+                </li>
+              </ul>
+            </div>
+          </div>
 
-<body>
-  <header>
-    <nav class="fixed top-0 z-30 w-full py-1 shadow-lg bg-secondary">
-      <div class="flex items-center justify-between w-full px-6 py-3 mt-0">
-        <label for="menu-toggle" class="block cursor-pointer md:hidden">
-          <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-            viewBox="0 0 20 20">
-            <title>menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-          </svg>
-        </label>
-        <input class="hidden" type="checkbox" id="menu-toggle" />
-        <div class="hidden w-full md:flex md:items-center md:w-auto md:order-1" id="menu">
-          <div>
-            <ul class="items-center justify-between pt-4 text-base text-white md:flex md:pt-0">
-              <li>
-                <a class="anchor" href="./index.html">Home</a>
-              </li>
-              <li>
-                <a class="anchor" href="./benefit.html">Benefit</a>
-              </li>
-              <li>
-                <a class="anchor" href="./our-team.html">Our Team</a>
-              </li>
-            </ul>
+          <div
+            class="flex flex-wrap items-center justify-end order-2 mr-0 md:order-3 md:mr-4"
+            id="nav-content"
+          >
+            <div class="flex items-center w-full auth md:w-full">
+              <a href="./login.html"
+                ><button class="sign-in-button">Sign in</button></a
+              >
+              <a href="./register.html">
+                <button class="sign-up-button">Sign up</button>
+              </a>
+            </div>
           </div>
         </div>
-
-        <div class="flex flex-wrap items-center justify-end order-2 mr-0 md:order-3 md:mr-4" id="nav-content">
-          <div class="flex items-center w-full auth md:w-full">
-            <a href="#"><button class="sign-in-button">Sign in</button></a>
-            <a href="./register.html">
-              <button class="sign-up-button">Sign up</button>
-            </a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <main class="w-full h-[100vh] bg-primary px-4 lg:px-0 lg:mt-12">
-
-  </main>
-  <footer class="flex items-center justify-center w-full border-none bg-primary">
-    <p class="p-4 m-auto text-white uppercase opacity-60 lg:p-0 lg:mb-8">
-      ©2023 CodeLift All Rights Reserved
-    </p>
-  </footer>
-</body>
-
+      </nav>
+    </header>
+    <main class="w-full h-[100vh] bg-primary px-4 lg:px-0 lg:mt-12"></main>
+    <footer
+      class="flex items-center justify-center w-full border-none bg-primary"
+    >
+      <p class="p-4 m-auto text-white uppercase opacity-60 lg:p-0 lg:mb-8">
+        ©2023 CodeLift All Rights Reserved
+      </p>
+    </footer>
+  </body>
 </html>
