@@ -43,8 +43,6 @@
   );
 }
 
-/***** LOGIN PAGE *****/
-
 /* NAVBAR RESPONSIVE */
 @media only screen and (max-width: 768px) {
   #menu-toggle:checked ~ #menu {
@@ -67,6 +65,8 @@
   }
 }
 /* END NAVBAR RESPONSIVE */
+
+/***** LOGIN & REGISTER PAGE *****/
 
 @layer base {
   /* ANCHOR AND BUTTON */
@@ -101,5 +101,4 @@
     @apply absolute left-0 top-0 flex items-center justify-center h-full w-10 text-blue-500 group-hover:text-blue-700;
   }
 }
-
-/***** END LOGIN PAGE *****/
+/***** END LOGIN & REGISTER PAGE *****/
