@@ -43,8 +43,6 @@
   );
 }
 
-/***** LOGIN PAGE *****/
-
 /* NAVBAR RESPONSIVE */
 @media only screen and (max-width: 768px) {
   #menu-toggle:checked ~ #menu {
@@ -68,6 +66,7 @@
 }
 /* END NAVBAR RESPONSIVE */
 
+/***** LOGIN PAGE *****/
 @layer base {
   /* ANCHOR AND BUTTON */
   .anchor {
@@ -102,4 +101,4 @@
   }
 }
 
-/***** END LOGIN PAGE *****/
+/***** END LOGIN & REGISTER PAGE *****/
