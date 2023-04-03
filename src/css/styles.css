@@ -66,7 +66,8 @@
 }
 /* END NAVBAR RESPONSIVE */
 
-/***** LOGIN PAGE *****/
+/***** LOGIN & REGISTER PAGE *****/
+
 @layer base {
   /* ANCHOR AND BUTTON */
   .anchor {
@@ -100,5 +101,4 @@
     @apply absolute left-0 top-0 flex items-center justify-center h-full w-10 text-blue-500 group-hover:text-blue-700;
   }
 }
-
 /***** END LOGIN & REGISTER PAGE *****/
