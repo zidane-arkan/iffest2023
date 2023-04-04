@@ -72,7 +72,7 @@
 }
 /* END NAVBAR RESPONSIVE */
 
-/***** LOGIN & REGISTER PAGE *****/
+/*** LOGIN & REGISTER PAGE ***/
 
 @layer base {
   /* ANCHOR AND BUTTON */
@@ -107,21 +107,8 @@
     @apply absolute left-0 top-0 flex items-center justify-center h-full w-10 text-blue-500 group-hover:text-blue-700;
   }
 }
-/***** END LOGIN & REGISTER PAGE *****/
+/*** END LOGIN & REGISTER PAGE ***/
 
-.feature-card:hover {
-  background: var(--black-gradient);
-  box-shadow: var(--card-shadow);
-}
+/*** BENEFIT PAGE ***/
 
-.feedback-container .feedback-card:last-child {
-  margin-right: 0px;
-}
-
-.feedback-card {
-  background: transparent;
-}
-
-.feedback-card:hover {
-  background: var(--black-gradient);
-}
+/*** END BENEFIT PAGE ***/
