@@ -110,5 +110,29 @@
 /*** END LOGIN & REGISTER PAGE ***/
 
 /*** BENEFIT PAGE ***/
+@layer base {
+  .header-section {
+    @apply text-4xl flex-center text-white text-center font-bold;
+  }
 
+  .card {
+    @apply bg-card p-8 w-[24rem] rounded-xl text-white;
+  }
+
+  .card-icon {
+    @apply h-4 w-4 ml-1 group-hover:translate-x-2 delay-100 duration-200 ease-in-out;
+  }
+
+  .card-header {
+    @apply font-bold text-2xl mt-4;
+  }
+
+  .card-info {
+    @apply font-light mt-4 leading-8;
+  }
+
+  .card-button {
+    @apply bg-yellow-300 hover:bg-yellow-500 text-black font-semibold rounded-md py-2 px-5 text-sm mt-6 inline-flex items-center;
+  }
+}
 /*** END BENEFIT PAGE ***/
