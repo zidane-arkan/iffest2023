@@ -2091,6 +2091,12 @@ video {
   transform: translateY(0);
 }
 
+.panel{
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.3s ease-in;
+}
+
 .hover\:text-yellow-500:hover {
   --tw-text-opacity: 1;
   color: rgb(234 179 8 / var(--tw-text-opacity));
@@ -2359,25 +2365,16 @@ video {
     padding-bottom: 1rem;
   }
 
-  .lg\:py-\[5\%\] {
-    padding-top: 5%;
-    padding-bottom: 5%;
-  }
-
   .lg\:pb-12 {
     padding-bottom: 3rem;
   }
 
-  .lg\:pt-\[5\%\] {
-    padding-top: 5%;
-  }
-
-  .lg\:pb-\[5\%\] {
-    padding-bottom: 5%;
-  }
-
   .lg\:pt-\[4\%\] {
     padding-top: 4%;
+  }
+
+  .lg\:pt-\[5\%\] {
+    padding-top: 5%;
   }
 
   .lg\:text-2xl {
@@ -2439,21 +2436,7 @@ video {
     align-items: center;
   }
 
-  .xl\:pt-\[5\%\] {
-    padding-top: 5%;
-  }
-
-  .xl\:pt-\[3\%\] {
-    padding-top: 3%;
-  }
-
   .xl\:pt-\[4\%\] {
     padding-top: 4%;
-  }
-}
-
-@media (min-width: 1536px) {
-  .\32xl\:pt-\[5\%\] {
-    padding-top: 5%;
   }
 }

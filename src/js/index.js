@@ -57,3 +57,20 @@ classes.forEach((item) => {
   divParent.appendChild(divContent);
   return classParent.appendChild(divParent);
 });
+
+let acc = document.getElementsByClassName("accordion");
+let i;
+let len = acc.length;
+console.log(len);
+for (i = 0; i < len; i++) {
+  acc[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    let panel = this.nextElementSibling;
+    console.log(panel);
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
