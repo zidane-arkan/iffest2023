@@ -1,12 +1,9 @@
 function isElementInViewport(el) {
-  const rect = el.getBoundingClientRect();
-  return (
-    rect.top >= 0 &&
-    rect.left >= 0 &&
-    rect.bottom <=
-      (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-  );
+  var rect = el.getBoundingClientRect();
+  var windowHeight =
+    window.innerHeight || document.documentElement.clientHeight;
+  var topThreshold = windowHeight * 0.7; // Ubah nilai threshold sesuai kebutuhan
+  return rect.top <= topThreshold && rect.bottom >= 0;
 }
 
 var animatedElements = document.querySelectorAll(".animated-element");
