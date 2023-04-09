@@ -1608,8 +1608,16 @@ video {
   align-self: center;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .overflow-x-hidden {
   overflow-x: hidden;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden;
 }
 
 .rounded {
@@ -1802,8 +1810,8 @@ video {
   padding-bottom: 4rem;
 }
 
-.pb-20 {
-  padding-bottom: 5rem;
+.pb-2 {
+  padding-bottom: 0.5rem;
 }
 
 .pt-24 {
@@ -1812,14 +1820,6 @@ video {
 
 .pt-4 {
   padding-top: 1rem;
-}
-
-.pb-2 {
-  padding-bottom: 0.5rem;
-}
-
-.pt-6 {
-  padding-top: 1.5rem;
 }
 
 .text-center {
@@ -2103,6 +2103,17 @@ video {
   -moz-transition: all 0.3s ease-in;
   -ms-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
+}
+
+.animated-element {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.animated-element.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .hover\:text-yellow-500:hover {
