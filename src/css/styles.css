@@ -245,6 +245,9 @@
   .person-wrapper {
     @apply flex flex-col items-center p-4 border sm:p-6 rounded-xl border-gray-700;
   }
+  .icon {
+    @apply mx-2 duration-300 text-gray-300 hover:-translate-y-1 opacity-80 hover:opacity-100;
+  }
 }
 
 /*** END OUR TEAM PAGE ***/
