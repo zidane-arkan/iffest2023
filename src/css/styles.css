@@ -88,6 +88,43 @@
 }
 /* END NAVBAR RESPONSIVE */
 
+/*** LANDING PAGE ***/
+.hero {
+  content: "";
+  background-image: url("https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80");
+  object-fit: cover;
+}
+.gradient {
+  background-image: linear-gradient(
+    to right,
+    rgba(17, 26, 37, 0.8) 20%,
+    rgba(17, 26, 37, 0.7) 40%,
+    rgba(17, 26, 37, 0.4) 70%,
+    rgba(17, 26, 37, 0) 100%
+  );
+}
+
+@layer base {
+  .hero-button {
+    @apply px-5 py-2 mt-10 text-sm font-medium leading-5 text-center capitalize bg-blue-600 rounded-lg bg-yellow-gradient text-primary hover:bg-blue-500 lg:mx-0 lg:w-auto focus:outline-none;
+  }
+
+  .footer-link-wrapper {
+    @apply grid grid-cols-2 gap-8 lg:col-span-2 lg:grid-cols-4 place-items-center lg:place-items-start lg:ml-28;
+  }
+
+  .footer-wrapper {
+    @apply grid grid-cols-1 gap-8 lg:grid-cols-3 place-items-center lg:place-items-start;
+  }
+
+  .footer-icon {
+    @apply opacity-80 hover:opacity-100 hover:-translate-y-1;
+  }
+  .footer-anchor-wrapper {
+    @apply flex flex-col mt-4 space-y-2 text-sm;
+  }
+}
+/*** END LANDING PAGE ***/
 /*** LOGIN & REGISTER PAGE ***/
 
 @layer base {
