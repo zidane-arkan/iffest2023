@@ -1,52 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home | CodeLift</title>
-    <link rel="shortcut icon" href="../asset/logo.png" type="image/x-icon" />
-    <link href="/dist/output.css" rel="stylesheet" />
-    <link href="../css/styles.css" rel="stylesheet" />
-  </head>
 
-  <body>
-    <header>
-      <nav class="fixed top-0 z-30 w-full py-1 shadow-lg bg-secondary">
-        <div class="flex items-center justify-between w-full px-6 py-3 mt-0">
-          <label for="menu-toggle" class="block cursor-pointer md:hidden">
-            <svg
-              class="text-white fill-current"
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-            >
-              <title>menu</title>
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-            </svg>
-          </label>
-          <input class="hidden" type="checkbox" id="menu-toggle" />
-          <div
-            class="hidden w-full md:flex md:items-center md:w-auto md:order-1"
-            id="menu"
-          >
-            <div>
-              <ul
-                class="items-center justify-between pt-4 text-base text-white md:flex md:pt-0"
-              >
-                <li>
-                  <a class="anchor" href="./index.html">Home</a>
-                </li>
-                <li>
-                  <a class="anchor" href="./benefit.html">Benefit</a>
-                </li>
-                <li>
-                  <a class="anchor" href="./our-team.html">Our Team</a>
-                </li>
-              </ul>
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | CodeLift</title>
+  <link rel="shortcut icon" href="../asset/logo.png" type="image/x-icon" />
+  <link href="/dist/output.css" rel="stylesheet" />
+  <link href="../css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <nav class="fixed top-0 z-30 w-full py-1 shadow-lg bg-secondary">
+      <div class="flex items-center justify-between w-full px-6 py-3 mt-0">
+        <label for="menu-toggle" class="block cursor-pointer md:hidden">
+          <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+            viewBox="0 0 20 20">
+            <title>menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+          </svg>
+        </label>
+        <input class="hidden" type="checkbox" id="menu-toggle" />
+        <div class="hidden w-full md:flex md:items-center md:w-auto md:order-1" id="menu">
+          <div>
+            <ul class="items-center justify-between pt-4 text-base text-white md:flex md:pt-0">
+              <li>
+                <a class="anchor" href="./index.html">Home</a>
+              </li>
+              <li>
+                <a class="anchor" href="./benefit.html">Benefit</a>
+              </li>
+              <li>
+                <a class="anchor" href="./our-team.html">Our Team</a>
+              </li>
+            </ul>
           </div>
+        </div>
 
           <div
             class="flex flex-wrap items-center justify-end order-2 mr-0 md:order-3 md:mr-4"
@@ -66,8 +57,8 @@
       class="w-full h-[100%] bg-primary lg:px-0 lg:pt-[4%] xl:pt-[4%] overflow-x-hidden"
     >
       <!-- HERO START -->
-      <section class="relative max-w-full mx-auto text-center isolate bg-cover">
-        <div class="hero w-full bg-no-repeat bg-cover">
+      <section class="relative max-w-full mx-auto text-center isolate bg-no-repeat bg-cover">
+        <div class="hero w-full">
           <div
             class="gradient relative mx-auto text-center pt-24 pb-16 lg:py-24 mt-6 lg:mt-0"
           >
@@ -326,298 +317,195 @@
               </a>
             </div>
 
-            <div class="flex-1 xl:mx-8">
-              <div
-                class="mt-8 space-y-8 md:-mx-4 md:flex md:items-center md:justify-center md:space-y-0 xl:mt-0"
-              >
-                <div
-                  class="max-w-sm mx-auto border rounded-lg md:mx-4 border-gray-700"
-                >
-                  <div class="p-6">
-                    <h1
-                      class="text-xl font-medium capitalize lg:text-2xl text-white"
-                    >
-                      Essential
-                    </h1>
+          <div class="flex-1 xl:mx-8">
+            <div class="mt-8 space-y-8 md:-mx-4 md:flex md:items-center md:justify-center md:space-y-0 xl:mt-0">
+              <div class="max-w-sm mx-auto border rounded-lg md:mx-4 border-gray-700">
+                <div class="p-6">
+                  <h1 class="text-xl font-medium capitalize lg:text-2xl text-white">
+                    Essential
+                  </h1>
 
-                    <p class="mt-4 text-gray-300">
-                      Choose Essentials for value-packed pricing. Get all the
-                      must-haves without breaking the bank.
-                    </p>
+                  <p class="mt-4 text-gray-300">
+                    Choose Essentials for value-packed pricing. Get all the
+                    must-haves without breaking the bank.
+                  </p>
 
-                    <h2
-                      class="mt-4 text-2xl font-semibold sm:text-3xl text-gray-300"
-                    >
-                      $3.00 <span class="text-base font-medium">/Month</span>
-                    </h2>
+                  <h2 class="mt-4 text-2xl font-semibold sm:text-3xl text-gray-300">
+                    $3.00 <span class="text-base font-medium">/Month</span>
+                  </h2>
 
-                    <p class="mt-1 text-gray-300">Yearly payment</p>
+                  <p class="mt-1 text-gray-300">Yearly payment</p>
 
-                    <button class="pricing-button">Start Now</button>
-                  </div>
-                  <hr class="border-gray-700" />
-                  <div class="p-6">
-                    <h1
-                      class="text-lg font-medium capitalize lg:text-xl text-white"
-                    >
-                      What’s included:
-                    </h1>
+                  <button class="pricing-button">Start Now</button>
+                </div>
+                <hr class="border-gray-700" />
+                <div class="p-6">
+                  <h1 class="text-lg font-medium capitalize lg:text-xl text-white">
+                    What’s included:
+                  </h1>
 
-                    <div class="mt-8 space-y-4">
-                      <div class="flex items-center">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="w-5 h-5 text-blue-500"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                            clip-rule="evenodd"
-                          />
-                        </svg>
+                  <div class="mt-8 space-y-4">
+                    <div class="flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clip-rule="evenodd" />
+                      </svg>
 
-                        <span class="mx-4 text-gray-300"
-                          >All limited links</span
-                        >
-                      </div>
+                      <span class="mx-4 text-gray-300">All limited links</span>
+                    </div>
 
-                      <div class="flex items-center">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="w-5 h-5 text-blue-500"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                            clip-rule="evenodd"
-                          />
-                        </svg>
+                    <div class="flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clip-rule="evenodd" />
+                      </svg>
 
-                        <span class="mx-4 text-gray-300"
-                          >Own analytics platform</span
-                        >
-                      </div>
+                      <span class="mx-4 text-gray-300">Own analytics platform</span>
+                    </div>
 
-                      <div class="flex items-center">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="w-5 h-5 text-blue-500"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                            clip-rule="evenodd"
-                          />
-                        </svg>
+                    <div class="flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clip-rule="evenodd" />
+                      </svg>
 
-                        <span class="mx-4 text-gray-300">Chat support</span>
-                      </div>
+                      <span class="mx-4 text-gray-300">Chat support</span>
+                    </div>
 
-                      <div class="flex items-center">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="w-5 h-5 text-blue-500"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                            clip-rule="evenodd"
-                          />
-                        </svg>
+                    <div class="flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clip-rule="evenodd" />
+                      </svg>
 
-                        <span class="mx-4 text-gray-300"
-                          >Optimize hashtags</span
-                        >
-                      </div>
+                      <span class="mx-4 text-gray-300">Optimize hashtags</span>
+                    </div>
 
-                      <div class="flex items-center">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="w-5 h-5 text-red-400"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M13.477 14.89A6 6 0 015.11 6.524l8.367 8.368zm1.414-1.414L6.524 5.11a6 6 0 018.367 8.367zM18 10a8 8 0 11-16 0 8 8 0 0116 0z"
-                            clip-rule="evenodd"
-                          />
-                        </svg>
+                    <div class="flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-red-400" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                          d="M13.477 14.89A6 6 0 015.11 6.524l8.367 8.368zm1.414-1.414L6.524 5.11a6 6 0 018.367 8.367zM18 10a8 8 0 11-16 0 8 8 0 0116 0z"
+                          clip-rule="evenodd" />
+                      </svg>
 
-                        <span class="mx-4 text-gray-300">Mobile app</span>
-                      </div>
+                      <span class="mx-4 text-gray-300">Mobile app</span>
+                    </div>
 
-                      <div class="flex items-center">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="w-5 h-5 text-red-400"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M13.477 14.89A6 6 0 015.11 6.524l8.367 8.368zm1.414-1.414L6.524 5.11a6 6 0 018.367 8.367zM18 10a8 8 0 11-16 0 8 8 0 0116 0z"
-                            clip-rule="evenodd"
-                          />
-                        </svg>
+                    <div class="flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-red-400" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                          d="M13.477 14.89A6 6 0 015.11 6.524l8.367 8.368zm1.414-1.414L6.524 5.11a6 6 0 018.367 8.367zM18 10a8 8 0 11-16 0 8 8 0 0116 0z"
+                          clip-rule="evenodd" />
+                      </svg>
 
-                        <span class="mx-4 text-gray-300">Unlimited users</span>
-                      </div>
+                      <span class="mx-4 text-gray-300">Unlimited users</span>
                     </div>
                   </div>
                 </div>
-                <div
-                  class="max-w-sm mx-auto border rounded-lg md:mx-4 border-gray-700"
-                >
-                  <div class="p-6">
-                    <h1
-                      class="text-xl font-medium capitalize lg:text-2xl text-white"
-                    >
-                      Premium
-                    </h1>
+              </div>
+              <div class="max-w-sm mx-auto border rounded-lg md:mx-4 border-gray-700">
+                <div class="p-6">
+                  <h1 class="text-xl font-medium capitalize lg:text-2xl text-white">
+                    Premium
+                  </h1>
 
-                    <p class="mt-4 text-gray-300">
-                      Upgrade to premium for unbeatable value. Get everything
-                      you need and more!
-                    </p>
+                  <p class="mt-4 text-gray-300">
+                    Upgrade to premium for unbeatable value. Get everything
+                    you need and more!
+                  </p>
 
-                    <h2
-                      class="mt-4 text-2xl font-semibold sm:text-3xl text-gray-300"
-                    >
-                      $50.00
-                      <span class="text-base font-medium">/life time</span>
-                    </h2>
+                  <h2 class="mt-4 text-2xl font-semibold sm:text-3xl text-gray-300">
+                    $50.00
+                    <span class="text-base font-medium">/life time</span>
+                  </h2>
 
-                    <p class="mt-1 text-gray-300">One time payment</p>
+                  <p class="mt-1 text-gray-300">One time payment</p>
 
-                    <button class="pricing-button">Start Now</button>
-                  </div>
+                  <button class="pricing-button">Start Now</button>
+                </div>
 
-                  <hr class="border-gray-700" />
+                <hr class="border-gray-700" />
 
-                  <div class="p-6">
-                    <h1
-                      class="text-lg font-medium capitalize lg:text-xl text-white"
-                    >
-                      What’s included:
-                    </h1>
+                <div class="p-6">
+                  <h1 class="text-lg font-medium capitalize lg:text-xl text-white">
+                    What’s included:
+                  </h1>
 
-                    <div class="mt-8 space-y-4">
-                      <div class="flex items-center">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="w-5 h-5 text-blue-500"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                            clip-rule="evenodd"
-                          />
-                        </svg>
+                  <div class="mt-8 space-y-4">
+                    <div class="flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clip-rule="evenodd" />
+                      </svg>
 
-                        <span class="mx-4 text-gray-300"
-                          >All limited links</span
-                        >
-                      </div>
+                      <span class="mx-4 text-gray-300">All limited links</span>
+                    </div>
 
-                      <div class="flex items-center">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="w-5 h-5 text-blue-500"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                            clip-rule="evenodd"
-                          />
-                        </svg>
+                    <div class="flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clip-rule="evenodd" />
+                      </svg>
 
-                        <span class="mx-4 text-gray-300"
-                          >Own analytics platform</span
-                        >
-                      </div>
+                      <span class="mx-4 text-gray-300">Own analytics platform</span>
+                    </div>
 
-                      <div class="flex items-center">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="w-5 h-5 text-blue-500"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                            clip-rule="evenodd"
-                          />
-                        </svg>
+                    <div class="flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clip-rule="evenodd" />
+                      </svg>
 
-                        <span class="mx-4 text-gray-300">Chat support</span>
-                      </div>
+                      <span class="mx-4 text-gray-300">Chat support</span>
+                    </div>
 
-                      <div class="flex items-center">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="w-5 h-5 text-blue-500"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                            clip-rule="evenodd"
-                          />
-                        </svg>
+                    <div class="flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clip-rule="evenodd" />
+                      </svg>
 
-                        <span class="mx-4 text-gray-300"
-                          >Optimize hashtags</span
-                        >
-                      </div>
+                      <span class="mx-4 text-gray-300">Optimize hashtags</span>
+                    </div>
 
-                      <div class="flex items-center">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="w-5 h-5 text-blue-500"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                            clip-rule="evenodd"
-                          />
-                        </svg>
+                    <div class="flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clip-rule="evenodd" />
+                      </svg>
 
-                        <span class="mx-4 text-gray-300">Mobile app</span>
-                      </div>
+                      <span class="mx-4 text-gray-300">Mobile app</span>
+                    </div>
 
-                      <div class="flex items-center">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="w-5 h-5 text-blue-500"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                            clip-rule="evenodd"
-                          />
-                        </svg>
+                    <div class="flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clip-rule="evenodd" />
+                      </svg>
 
-                        <span class="mx-4 text-gray-300">Unlimited users</span>
-                      </div>
+                      <span class="mx-4 text-gray-300">Unlimited users</span>
                     </div>
                   </div>
                 </div>
@@ -625,74 +513,58 @@
             </div>
           </div>
         </div>
-      </section>
-      <!-- PRICING END -->
-      <!-- CLASS CHOICE -->
-      <section id="classChoice" class="pb-4 text-gray-400 bg-gray-900">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="flex flex-wrap w-full mb-20">
-            <div class="w-full mb-6 lg:w-1/2 lg:mb-0">
-              <h1 class="mb-2 text-2xl font-medium text-white sm:text-3xl">
-                Learning Path With Global Standard
-              </h1>
-              <div class="w-20 h-1 bg-yellow-500 rounded"></div>
-            </div>
-            <p
-              class="w-full leading-relaxed text-gray-400 lg:w-1/2 text-opacity-90"
-            >
-              At CodeLift, we believe that quality education should be
-              accessible to everyone, regardless of their location. Our
-              comprehensive learning path is designed to meet global standards,
-              ensuring that you receive the best education no matter where you
-              are. Join us and unlock your full potential today.
-            </p>
+      </div>
+    </section>
+    <!-- PRICING END -->
+    <!-- CLASS CHOICE -->
+    <section id="classChoice" class="pb-16 text-gray-400 bg-gray-900 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap w-full mb-20">
+          <div class="w-full mb-6 lg:w-1/2 lg:mb-0">
+            <h1 class="mb-2 text-2xl font-medium text-white sm:text-3xl title-font">
+              Learning Path With Global Standard
+            </h1>
+            <div class="w-20 h-1 bg-yellow-500 rounded"></div>
           </div>
-          <!-- Content Generate By Vanilla Javascript -->
-          <div id="classesParent" class="flex flex-wrap -m-4"></div>
+          <p class="w-full leading-relaxed text-gray-400 lg:w-1/2 text-opacity-90">
+            At CodeLift, we believe that quality education should be
+            accessible to everyone, regardless of their location. Our
+            comprehensive learning path is designed to meet global standards,
+            ensuring that you receive the best education no matter where you
+            are. Join us and unlock your full potential today.
+          </p>
         </div>
-      </section>
-      <!--  CLASS CHOICE END-->
+        <!-- Content Generate By Vanilla Javascript -->
+        <div id="classesParent" class="flex flex-wrap -m-4"></div>
+      </div>
+    </section>
+    <!--  CLASS CHOICE END-->
 
-      <!-- FAQ START -->
-      <section class="pb-12 bg-secondary">
-        <div class="container px-6 py-12 mx-auto">
-          <h1 class="text-2xl font-semibold lg:text-3xl text-white">
-            Frequently asked questions
-          </h1>
-          <div class="mt-4">
-            <span
-              class="inline-block w-40 h-1 bg-yellow-500 rounded-full"
-            ></span>
-            <span
-              class="inline-block w-3 h-1 mx-1 bg-yellow-500 rounded-full"
-            ></span>
-            <span
-              class="inline-block w-1 h-1 bg-yellow-500 rounded-full"
-            ></span>
-          </div>
-          <div class="mt-8 space-y-8 lg:mt-12">
-            <div class="p-8 rounded-lg bg-gray-800">
-              <button class="flex items-center justify-between w-full">
-                <h1 class="font-semibold text-white">
-                  What kind of curriculum will I get ?
-                </h1>
-                <span class="text-gray-400 bg-gray-200 rounded-full">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="w-6 h-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M18 12H6"
-                    />
-                  </svg>
-                </span>
-              </button>
+    <!-- FAQ START -->
+    <section class="pb-20 bg-secondary">
+      <div class="container px-6 py-12 mx-auto">
+        <h1 class="text-2xl font-semibold lg:text-3xl text-white">
+          Frequently asked questions
+        </h1>
+        <div class="mt-4">
+          <span class="inline-block w-40 h-1 bg-yellow-500 rounded-full"></span>
+          <span class="inline-block w-3 h-1 mx-1 bg-yellow-500 rounded-full"></span>
+          <span class="inline-block w-1 h-1 bg-yellow-500 rounded-full"></span>
+        </div>
+        <div class="mt-8 space-y-8 lg:mt-12">
+          <div class="p-8 rounded-lg bg-gray-800">
+            <button class="accordion flex items-center justify-between w-full">
+              <h1 class="font-semibold text-white">
+                What kind of curriculum will I get ?
+              </h1>
+              <span class="icon text-white bg-blue-500 rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon w-6 h-6" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                </svg>
+              </span>
+            </button>
+            <div class="panel">
               <p class="mt-6 text-sm text-gray-300">
                 Unleash your full coding potential with our comprehensive
                 curriculum designed to equip you with the skills and knowledge
@@ -700,224 +572,195 @@
                 you can learn at CodeLift.
               </p>
             </div>
+          </div>
 
-            <div class="p-8 rounded-lg bg-gray-800">
-              <button class="flex items-center justify-between w-full">
-                <h1 class="font-semibold text-white">
-                  Can I study flexibly according to my schedule ?
-                </h1>
-                <span class="text-white bg-blue-500 rounded-full">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="w-6 h-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M12 6v6m0 0v6m0-6h6m-6 0H6"
-                    />
-                  </svg>
-                </span>
-              </button>
+          <div class=" p-8 rounded-lg bg-gray-800">
+            <button class="accordion flex items-center justify-between w-full">
+              <h1 class="font-semibold text-white">
+                Can I study flexibly according to my schedule ?
+              </h1>
+              <span class="text-white bg-blue-500 rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                </svg>
+              </span>
+            </button>
+            <div class="panel">
+              <p class="mt-6 text-sm text-gray-300">
+                Unleash your full coding potential with our comprehensive
+                curriculum designed to equip you with the skills and knowledge
+                to succeed in the ever-evolving tech landscape. Discover what
+                you can learn at CodeLift.
+              </p>
             </div>
+          </div>
 
-            <div class="p-8 rounded-lg bg-gray-800">
-              <button class="flex items-center justify-between w-full">
-                <h1 class="font-semibold text-white">
-                  Who will judge my assignment ?
-                </h1>
-                <span class="text-white bg-blue-500 rounded-full">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="w-6 h-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M12 6v6m0 0v6m0-6h6m-6 0H6"
-                    />
-                  </svg>
-                </span>
-              </button>
+          <div class="p-8 rounded-lg bg-gray-800">
+            <button class="accordion flex items-center justify-between w-full">
+              <h1 class="font-semibold text-white">
+                Who will judge my assignment ?
+              </h1>
+              <span class="text-white bg-blue-500 rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                </svg>
+              </span>
+            </button>
+            <div class="panel">
+              <p class="mt-6 text-sm text-gray-300">
+                Unleash your full coding potential with our comprehensive
+                curriculum designed to equip you with the skills and knowledge
+                to succeed in the ever-evolving tech landscape. Discover what
+                you can learn at CodeLift.
+              </p>
             </div>
+          </div>
 
-            <div class="p-8 rounded-lg bg-gray-800">
-              <button class="flex items-center justify-between w-full">
-                <h1 class="font-semibold text-white">
-                  Can I entrust my progress ?
-                </h1>
-                <span class="text-white bg-blue-500 rounded-full">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="w-6 h-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M12 6v6m0 0v6m0-6h6m-6 0H6"
-                    />
-                  </svg>
-                </span>
-              </button>
+          <div class="p-8 rounded-lg bg-gray-800">
+            <button class="accordion flex items-center justify-between w-full">
+              <h1 class="font-semibold text-white">
+                Can I entrust my progress ?
+              </h1>
+              <span class="text-white bg-blue-500 rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                </svg>
+              </span>
+            </button>
+            <div class="panel">
+              <p class="mt-6 text-sm text-gray-300">
+                Unleash your full coding potential with our comprehensive
+                curriculum designed to equip you with the skills and knowledge
+                to succeed in the ever-evolving tech landscape. Discover what
+                you can learn at CodeLift.
+              </p>
             </div>
           </div>
         </div>
-      </section>
-      <!-- FAQ END -->
-      <!-- OWNER COMMENT START -->
-      <section>
-        <div class="relative flex">
-          <div class="min-h-screen lg:w-1/3"></div>
-          <div class="hidden w-3/4 min-h-screen bg-gray-800 lg:block"></div>
-          <div class="owner-wrapper">
-            <h1
-              class="text-2xl font-semibold capitalize lg:text-3xl text-white"
-            >
-              What our <span class="text-yellow-500">CEO</span> <br />
-              are saying
-            </h1>
-
-            <div class="mt-10 lg:mt-20 lg:flex lg:items-center">
-              <img
-                class="object-cover object-center w-full lg:w-[32rem] rounded-lg h-96"
-                src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
-                alt=""
-              />
-
-              <div class="mt-8 lg:px-10 lg:mt-0">
-                <h1 class="text-2xl font-semibold text-white lg:w-72">
-                  Help you improve your productivity
-                </h1>
-
-                <p class="max-w-lg mt-6 text-gray-400">
-                  “ We believe that programming education is not just about
-                  learning to code, it's about creating the future. At CodeLift,
-                  we're empowering the next generation of tech leaders to dream
-                  big and innovate boldly. ”
-                </p>
-
-                <h3 class="mt-6 text-lg font-medium text-yellow-500">
-                  Iman Ederson
-                </h3>
-                <p class="text-gray-300">CEO at CODELIFT</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- OWNER COMMENT END -->
-    </main>
-    <footer class="bg-gradient-to-l from-secondary to-primary">
-      <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
-        <div class="footer-wrapper">
-          <div class="ml-10 lg:ml-0">
-            <img
-              src="../asset/logo.png"
-              class="lg:mr-5 h-10 lg:h-12"
-              alt="logo"
-            />
-            <p class="max-w-xs mt-4 text-sm text-white">
-              The best way to be a The Best Programmer in the World
-            </p>
-            <div class="flex mt-8 space-x-6 text-white">
-              <a class="footer-icon" href target="_blank" rel="noreferrer">
-                <span class="sr-only"> Facebook </span>
-                <img
-                  src="../asset/landing-page-asset/facebook.png"
-                  alt="facebook"
-                  class="w-6 h-6"
-                />
-              </a>
-              <a class="footer-icon" href target="_blank" rel="noreferrer">
-                <span class="sr-only"> Instagram </span>
-                <img
-                  src="../asset/landing-page-asset/instagram.png"
-                  alt="instagram"
-                  class="w-6 h-6"
-                />
-              </a>
-              <a class="footer-icon" href target="_blank" rel="noreferrer">
-                <span class="sr-only"> Twitter </span>
-                <img
-                  src="../asset/landing-page-asset/twitter.png"
-                  alt="twitter"
-                  class="w-6 h-6"
-                />
-              </a>
-              <a class="footer-icon" href target="_blank" rel="noreferrer">
-                <span class="sr-only"> GitHub </span>
-                <img
-                  src="../asset/landing-page-asset/github.png"
-                  alt="github"
-                  class="w-6 h-6"
-                />
-              </a>
-              <a class="footer-icon" href target="_blank" rel="noreferrer">
-                <span class="sr-only"> Dribbble </span>
-                <img
-                  src="../asset/landing-page-asset/dribble.png"
-                  alt="dribble"
-                  class="w-6 h-6"
-                />
-              </a>
-            </div>
-          </div>
-          <div class="footer-link-wrapper">
-            <div class="text-white">
-              <p class="font-medium">Company</p>
-              <div class="footer-anchor-wrapper">
-                <a class="hover:text-yellow-500" href> About </a>
-                <a class="hover:text-yellow-500" href> Meet the Team </a>
-                <a class="hover:text-yellow-500" href> History </a>
-                <a class="hover:text-yellow-500" href> Careers </a>
-              </div>
-            </div>
-            <div class="text-white">
-              <p class="font-medium">Services</p>
-              <div class="footer-anchor-wrapper">
-                <a class="hover:text-yellow-500" href> Company Review </a>
-                <a class="hover:text-yellow-500" href> Accounts Review </a>
-                <a class="hover:text-yellow-500" href> HR Consulting </a>
-                <a class="hover:text-yellow-500" href> SEO Optimisation </a>
-              </div>
-            </div>
-            <div class="text-white">
-              <p class="font-medium">Helpful Links</p>
-              <div class="footer-anchor-wrapper">
-                <a class="hover:text-yellow-500" href> 1 on 1 Coaching </a>
-                <a class="hover:text-yellow-500" href> Contact </a>
-                <a class="hover:text-yellow-500" href> FAQs </a>
-                <a class="hover:text-yellow-500" href> Live Chat </a>
-              </div>
-            </div>
-            <div class="text-white">
-              <p class="font-medium">Legal</p>
-              <div class="footer-anchor-wrapper">
-                <a class="hover:text-yellow-500" href> Privacy Policy </a>
-                <a class="hover:text-yellow-500" href> Terms & Conditions </a>
-                <a class="hover:text-yellow-500" href> Returns Policy </a>
-                <a class="hover:text-yellow-500" href> Accessibility </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="flex-center mt-14 text-xs text-white opacity-60">
-          ©2023 CodeLift All Rights Reserved
-        </p>
       </div>
-    </footer>
-    <script src="../js/index.js"></script>
-  </body>
+    </section>
+    <!-- FAQ END -->
+    <!-- OWNER COMMENT START -->
+    <section>
+      <div class="relative flex">
+        <div class="min-h-screen lg:w-1/3"></div>
+        <div class="hidden w-3/4 min-h-screen bg-gray-800 lg:block"></div>
+        <div class="owner-wrapper">
+          <h1 class="text-2xl font-semibold capitalize lg:text-3xl text-white">
+            What our <span class="text-yellow-500">CEO</span> <br />
+            are saying
+          </h1>
+
+          <div class="mt-10 lg:mt-20 lg:flex lg:items-center">
+            <img class="object-cover object-center w-full lg:w-[32rem] rounded-lg h-96"
+              src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+              alt="" />
+
+            <div class="mt-8 lg:px-10 lg:mt-0">
+              <h1 class="text-2xl font-semibold text-white lg:w-72">
+                Help you improve your productivity
+              </h1>
+
+              <p class="max-w-lg mt-6 text-gray-400">
+                “ We believe that programming education is not just about
+                learning to code, it's about creating the future. At CodeLift,
+                we're empowering the next generation of tech leaders to dream
+                big and innovate boldly. ”
+              </p>
+
+              <h3 class="mt-6 text-lg font-medium text-yellow-500">
+                Iman Ederson
+              </h3>
+              <p class="text-gray-300">CEO at CODELIFT</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- OWNER COMMENT END -->
+  </main>
+  <footer class="bg-gradient-to-l from-secondary to-primary">
+    <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
+      <div class="footer-wrapper">
+        <div class="ml-10 lg:ml-0">
+          <img src="../asset/logo.png" class="lg:mr-5 h-10 lg:h-12" alt="logo" />
+          <p class="max-w-xs mt-4 text-sm text-white">
+            The best way to be a The Best Programmer in the World
+          </p>
+          <div class="flex mt-8 space-x-6 text-white">
+            <a class="footer-icon" href target="_blank" rel="noreferrer">
+              <span class="sr-only"> Facebook </span>
+              <img src="../asset/landing-page-asset/facebook.png" alt="facebook" class="w-6 h-6" />
+            </a>
+            <a class="footer-icon" href target="_blank" rel="noreferrer">
+              <span class="sr-only"> Instagram </span>
+              <img src="../asset/landing-page-asset/instagram.png" alt="instagram" class="w-6 h-6" />
+            </a>
+            <a class="footer-icon" href target="_blank" rel="noreferrer">
+              <span class="sr-only"> Twitter </span>
+              <img src="../asset/landing-page-asset/twitter.png" alt="twitter" class="w-6 h-6" />
+            </a>
+            <a class="footer-icon" href target="_blank" rel="noreferrer">
+              <span class="sr-only"> GitHub </span>
+              <img src="../asset/landing-page-asset/github.png" alt="github" class="w-6 h-6" />
+            </a>
+            <a class="footer-icon" href target="_blank" rel="noreferrer">
+              <span class="sr-only"> Dribbble </span>
+              <img src="../asset/landing-page-asset/dribble.png" alt="dribble" class="w-6 h-6" />
+            </a>
+          </div>
+        </div>
+        <div class="footer-link-wrapper">
+          <div class="text-white">
+            <p class="font-medium">Company</p>
+            <div class="footer-anchor-wrapper">
+              <a class="hover:text-yellow-500" href> About </a>
+              <a class="hover:text-yellow-500" href> Meet the Team </a>
+              <a class="hover:text-yellow-500" href> History </a>
+              <a class="hover:text-yellow-500" href> Careers </a>
+            </div>
+          </div>
+          <div class="text-white">
+            <p class="font-medium">Services</p>
+            <div class="footer-anchor-wrapper">
+              <a class="hover:text-yellow-500" href> Company Review </a>
+              <a class="hover:text-yellow-500" href> Accounts Review </a>
+              <a class="hover:text-yellow-500" href> HR Consulting </a>
+              <a class="hover:text-yellow-500" href> SEO Optimisation </a>
+            </div>
+          </div>
+          <div class="text-white">
+            <p class="font-medium">Helpful Links</p>
+            <div class="footer-anchor-wrapper">
+              <a class="hover:text-yellow-500" href> 1 on 1 Coaching </a>
+              <a class="hover:text-yellow-500" href> Contact </a>
+              <a class="hover:text-yellow-500" href> FAQs </a>
+              <a class="hover:text-yellow-500" href> Live Chat </a>
+            </div>
+          </div>
+          <div class="text-white">
+            <p class="font-medium">Legal</p>
+            <div class="footer-anchor-wrapper">
+              <a class="hover:text-yellow-500" href> Privacy Policy </a>
+              <a class="hover:text-yellow-500" href> Terms & Conditions </a>
+              <a class="hover:text-yellow-500" href> Returns Policy </a>
+              <a class="hover:text-yellow-500" href> Accessibility </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="flex-center mt-14 text-xs text-white opacity-60">
+        ©2023 CodeLift All Rights Reserved
+      </p>
+    </div>
+  </footer>
+  <script src="../js/index.js"></script>
+</body>
+
 </html>

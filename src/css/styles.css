@@ -228,3 +228,9 @@
   }
 }
 /*** END BENEFIT PAGE ***/
+
+.panel {
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.3s ease-in;
+}

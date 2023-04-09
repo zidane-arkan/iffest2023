@@ -1659,11 +1659,6 @@ video {
   background-color: rgb(41 48 57 / var(--tw-bg-opacity));
 }
 
-.bg-gray-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
-}
-
 .bg-gray-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
@@ -1803,16 +1798,12 @@ video {
   padding-bottom: 2.5rem;
 }
 
-.pb-12 {
-  padding-bottom: 3rem;
-}
-
 .pb-16 {
   padding-bottom: 4rem;
 }
 
-.pb-4 {
-  padding-bottom: 1rem;
+.pb-20 {
+  padding-bottom: 5rem;
 }
 
 .pt-24 {
@@ -2095,6 +2086,12 @@ video {
 /*** BENEFIT PAGE ***/
 
 /*** END BENEFIT PAGE ***/
+
+.panel {
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.3s ease-in;
+}
 
 .hover\:text-yellow-500:hover {
   --tw-text-opacity: 1;
