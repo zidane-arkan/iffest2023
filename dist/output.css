@@ -1802,8 +1802,8 @@ video {
   padding-bottom: 4rem;
 }
 
-.pb-20 {
-  padding-bottom: 5rem;
+.pb-2 {
+  padding-bottom: 0.5rem;
 }
 
 .pt-24 {
@@ -1812,10 +1812,6 @@ video {
 
 .pt-4 {
   padding-top: 1rem;
-}
-
-.pb-2 {
-  padding-bottom: 0.5rem;
 }
 
 .text-center {
@@ -2100,6 +2096,18 @@ video {
   -ms-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
 }
+
+/* On Scroll Animation */
+
+.hidden{
+  opacity: 0;
+}
+
+.show{
+  opacity: 1;
+}
+
+/* On Scroll Animation End */
 
 .hover\:text-yellow-500:hover {
   --tw-text-opacity: 1;
