@@ -105,10 +105,36 @@
 }
 
 @layer base {
+  .hero-header {
+    @apply flex-center flex-col gap-y-3 text-3xl font-bold text-white lg:text-4xl;
+  }
+
   .hero-button {
     @apply px-5 py-2 mt-10 text-sm font-medium leading-5 text-center capitalize bg-blue-600 rounded-lg bg-yellow-gradient text-primary hover:bg-blue-500 lg:mx-0 lg:w-auto focus:outline-none;
   }
+  .hero-feature {
+    @apply flex-center flex-wrap  mt-8 text-gray-500 sm:justify-between;
+  }
 
+  .hero-icon {
+    @apply mb-3 mr-3 mt-6 lg:mb-0 text-yellow-400 hover:text-yellow-500;
+  }
+
+  .feature-icon {
+    @apply inline-flex items-center justify-center flex-shrink-0 w-20 h-20 mb-5 text-yellow-500 bg-yellow-100 rounded-full;
+  }
+
+  .feature-card-header {
+    @apply mb-3 text-lg font-medium text-gray-100;
+  }
+
+  .feature-button {
+    @apply flex px-8 py-2 mx-auto mt-16 text-lg text-black bg-yellow-500 border-0 rounded focus:outline-none hover:bg-yellow-600;
+  }
+
+  .pricing-button {
+    @apply w-full px-4 py-2 mt-6 tracking-wide capitalize transition-colors duration-300 transform rounded-md text-primary bg-yellow-gradient;
+  }
   .footer-link-wrapper {
     @apply grid grid-cols-2 gap-8 lg:col-span-2 lg:grid-cols-4 place-items-center lg:place-items-start lg:ml-28;
   }
@@ -125,6 +151,7 @@
   }
 }
 /*** END LANDING PAGE ***/
+
 /*** LOGIN & REGISTER PAGE ***/
 
 @layer base {
