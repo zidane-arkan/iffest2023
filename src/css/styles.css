@@ -129,6 +129,7 @@
 }
 
 @layer base {
+  /* HERO SECTION */
   .hero-header {
     @apply flex-center flex-col gap-y-3 text-3xl font-bold text-white lg:text-4xl;
   }
@@ -144,6 +145,7 @@
     @apply mb-3 mr-3 mt-6 lg:mb-0 text-yellow-400 hover:text-yellow-500;
   }
 
+  /* FEATURE SECTION */
   .feature-icon {
     @apply inline-flex items-center justify-center flex-shrink-0 w-20 h-20 mb-5 text-yellow-500 bg-yellow-100 rounded-full;
   }
@@ -156,10 +158,12 @@
     @apply flex px-8 py-2 mx-auto mt-16 text-lg text-black bg-yellow-500 border-0 rounded focus:outline-none hover:bg-yellow-600;
   }
 
+  /* PRICING SECTION */
   .pricing-button {
     @apply w-full px-4 py-2 mt-6 tracking-wide capitalize transition-colors duration-300 transform rounded-md text-primary bg-yellow-gradient opacity-90 hover:opacity-100;
   }
 
+  /* OWNER SECTION */
   .owner-wrapper {
     @apply container flex flex-col justify-center w-full min-h-screen px-6 py-10 mx-auto lg:absolute lg:inset-x-0;
   }
