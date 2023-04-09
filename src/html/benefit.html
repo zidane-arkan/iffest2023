@@ -1,295 +1,506 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Benefit | CodeLift</title>
+    <link rel="shortcut icon" href="../asset/logo.png" type="image/x-icon" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link href="../css/styles.css" rel="stylesheet" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Benefit | CodeLift</title>
-  <link rel="shortcut icon" href="../asset/logo.png" type="image/x-icon" />
-  <link href="/dist/output.css" rel="stylesheet" />
-  <link href="../css/styles.css" rel="stylesheet" />
-</head>
-
-<body class="w-full">
-  <header>
-    <nav class="fixed top-0 z-30 w-full py-1 shadow-lg bg-secondary">
-      <div class="flex items-center justify-between w-full px-6 py-3 mt-0">
-        <label for="menu-toggle" class="block cursor-pointer md:hidden">
-          <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-            viewBox="0 0 20 20">
-            <title>menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-          </svg>
-        </label>
-        <input class="hidden" type="checkbox" id="menu-toggle" />
-        <div class="hidden w-full md:flex md:items-center md:w-auto md:order-1" id="menu">
-          <div>
-            <ul class="items-center justify-between pt-4 text-base text-white md:flex md:pt-0">
-              <li>
-                <a class="anchor" href="./index.html">Home</a>
-              </li>
-              <li>
-                <a class="anchor" href="./benefit.html">Benefit</a>
-              </li>
-              <li>
-                <a class="anchor" href="./our-team.html">Our Team</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="flex flex-wrap items-center justify-end order-2 mr-0 md:order-3 md:mr-4" id="nav-content">
-          <div class="flex items-center w-full auth md:w-full">
-            <a href="./login.html"><button class="sign-in-button">Sign in</button></a>
-            <a href="./register.html">
-              <button class="sign-up-button">Sign up</button>
-            </a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <main class="w-full h-[100%] lg:mt-12 overflow-x-hidden">
-    <section id="benefits-fs" class="py-8 mt-6 lg:mt-0 lg:pb-12 bg-primary">
-      <div class="flex-col w-full flex-center">
-        <h1 class="flex-col mb-10 header-section mt-14 lg:my-12">
-          What are the benefits of being a
-          <span class="text-gradient flex-center">Fullstack Developer?</span>
-        </h1>
-        <div class="flex flex-wrap items-center justify-center gap-8">
-          <div class="card">
-            <div class="flex text-sm font-light">
-              <img src="../asset/benefit-asset/briefcase.png" alt="suitcase icon" class="w-16 h-16" />
+  <body class="w-full">
+    <header>
+      <nav class="fixed top-0 z-30 w-full py-1 shadow-lg bg-secondary">
+        <div class="flex items-center justify-between w-full px-6 py-3 mt-0">
+          <label for="menu-toggle" class="block cursor-pointer md:hidden">
+            <svg
+              class="text-white fill-current"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+            >
+              <title>menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg>
+          </label>
+          <input class="hidden" type="checkbox" id="menu-toggle" />
+          <div
+            class="hidden w-full md:flex md:items-center md:w-auto md:order-1"
+            id="menu"
+          >
+            <div>
+              <ul
+                class="items-center justify-between pt-4 text-base text-white md:flex md:pt-0"
+              >
+                <li>
+                  <a class="anchor" href="./index.html">Home</a>
+                </li>
+                <li>
+                  <a class="anchor" href="./benefit.html">Benefit</a>
+                </li>
+                <li>
+                  <a class="anchor" href="./our-team.html">Our Team</a>
+                </li>
+              </ul>
             </div>
-
-            <h3 class="card-header">Have Lots of Job Opportunities</h3>
-
-            <p class="card-info">
-              Not only working in Indonesia, you can also work abroad either
-              onsite or remote if you have so many good skills such as
-              Fullstack Developer skills Check here:
-              <a href="https://www.coursera.org/articles/full-stack-developer-salary" class="text-yellow-500">
-                Salary of Fullstack Developer Coursera Version</a>
-            </p>
-
-            <button class="card-button group">
-              <p>READ MORE</p>
-              <svg xmlns="http://www.w3.org/2000/svg" class="card-icon" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
           </div>
-          <div class="card">
-            <div class="flex text-sm font-light">
-              <img src="../asset/benefit-asset/teleworking.png" alt="suitcase icon" class="w-16 h-16" />
-            </div>
 
-            <h3 class="card-header">Earning Money Through Freelance</h3>
-
-            <p class="card-info">
-              Want to work without being tied down? You can also become a
-              freelancer by selling website or web-based application
-              development services. Check it out here:
-              <a href="https://www.upwork.com" class="text-yellow-500">upwork.com</a>
-              ,
-              <a href="https://www.projects.co.id" class="text-yellow-500">projects.co.id</a>
-              ,
-              <a href="https://www.fiverr.com" class="text-yellow-500">
-                fiverr.com</a>
-              ,
-              <a href="https://www.fiverr.com" class="text-yellow-500">
-                fiverr.com</a>
-            </p>
-
-            <button class="card-button group">
-              <p>READ MORE</p>
-              <svg xmlns="http://www.w3.org/2000/svg" class="card-icon" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
-          </div>
-          <div class="card">
-            <div class="flex text-sm font-light">
-              <img src="../asset/benefit-asset/package.png" alt="suitcase icon" class="w-16 h-16" />
-            </div>
-
-            <h3 class="card-header">You Can Make Your Own Product</h3>
-
-            <p class="card-info">
-              Have your own idea for an online business? If you're a Fullstack
-              Developer, you don't have to worry. Just build it yourself! Who
-              knows, you might become the next William Tanuwijaya, Achmad
-              Zaky, or
-
-              <a href="https://id.wikipedia.org/wiki/Nadiem_Makarim" class="text-yellow-500">
-                Nadiem Makarim</a>
-            </p>
-
-            <button class="card-button group">
-              <p>READ MORE</p>
-              <svg xmlns="http://www.w3.org/2000/svg" class="card-icon" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
-          </div>
-          <div class="card">
-            <div class="flex text-sm font-light">
-              <img src="../asset/benefit-asset/display-code.png" alt="suitcase icon" class="w-16 h-16" />
-            </div>
-
-            <h3 class="card-header">Skills Needed by Industry</h3>
-
-            <p class="card-info">
-              if you become a Fullstack Developer, at least you will still be
-              needed by the industry. Even Pak Jokowi once said that coding
-              skills would be more important than English in the future. Do
-              not believe? Check
-              <a href="https://www.cnnindonesia.com/ekonomi/20211013125502-532-707177/jokowi-sebut-ilmu-coding-lebih-penting-dari-bahasa-inggris"
-                class="text-yellow-500">
-                Here!!
+          <div
+            class="flex flex-wrap items-center justify-end order-2 mr-0 md:order-3 md:mr-4"
+            id="nav-content"
+          >
+            <div class="flex items-center w-full auth md:w-full">
+              <a href="./login.html"
+                ><button class="sign-in-button">Sign in</button></a
+              >
+              <a href="./register.html">
+                <button class="sign-up-button">Sign up</button>
               </a>
-            </p>
-
-            <button class="card-button group">
-              <p>READ MORE</p>
-              <svg xmlns="http://www.w3.org/2000/svg" class="card-icon" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
-          </div>
-          <div class="card">
-            <div class="flex text-sm font-light">
-              <img src="../asset/benefit-asset/walking.png" alt="suitcase icon" class="w-16 h-16" />
             </div>
-
-            <h3 class="card-header">Choose Your Role Job</h3>
-
-            <p class="card-info">
-              If you have expertise in Fullstack Development, you can choose
-              your own job role, whether you want to take on a job as a Front
-              End Developer, Back End Developer, or even Fullstack Developer
-            </p>
-
-            <button class="card-button group">
-              <p>READ MORE</p>
-              <svg xmlns="http://www.w3.org/2000/svg" class="card-icon" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
           </div>
-          <div class="card">
-            <div class="flex text-sm font-light">
-              <img src="../asset/benefit-asset/money.png" alt="suitcase icon" class="w-16 h-16" />
+        </div>
+      </nav>
+    </header>
+    <main class="w-full h-[100%] lg:mt-12 overflow-x-hidden">
+      <section id="benefits-fs" class="py-8 mt-6 lg:mt-0 lg:pb-12 bg-primary">
+        <div class="flex-col w-full flex-center">
+          <h1 class="flex-col mb-10 header-section mt-14 lg:my-12">
+            What are the benefits of being a
+            <span class="text-gradient flex-center">Fullstack Developer?</span>
+          </h1>
+          <div class="flex flex-wrap items-center justify-center gap-8">
+            <div class="card">
+              <div class="flex text-sm font-light">
+                <img
+                  src="../asset/benefit-asset/briefcase.png"
+                  alt="suitcase icon"
+                  class="w-16 h-16"
+                />
+              </div>
+
+              <h3 class="card-header">Have Lots of Job Opportunities</h3>
+
+              <p class="card-info">
+                Not only working in Indonesia, you can also work abroad either
+                onsite or remote if you have so many good skills such as
+                Fullstack Developer skills Check here:
+                <a
+                  href="https://www.coursera.org/articles/full-stack-developer-salary"
+                  class="text-yellow-500"
+                >
+                  Salary of Fullstack Developer Coursera Version</a
+                >
+              </p>
+
+              <button class="card-button group">
+                <p>READ MORE</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="card-icon"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </button>
             </div>
+            <div class="card">
+              <div class="flex text-sm font-light">
+                <img
+                  src="../asset/benefit-asset/teleworking.png"
+                  alt="suitcase icon"
+                  class="w-16 h-16"
+                />
+              </div>
 
-            <h3 class="card-header">Paid with High Salary</h3>
+              <h3 class="card-header">Earning Money Through Freelance</h3>
 
-            <p class="card-info">
-              A Fullstack Developer is typically paid around IDR 7 million to
-              IDR 12 million per month in Indonesia, depending on their
-              experience and work location. Check it out here:
-              <a href="https://www.coursera.org/articles/full-stack-developer-salary" class="text-yellow-500">
-                Fullstack Developer Salary Information</a>
-            </p>
+              <p class="card-info">
+                Want to work without being tied down? You can also become a
+                freelancer by selling website or web-based application
+                development services. Check it out here:
+                <a href="https://www.upwork.com" class="text-yellow-500"
+                  >upwork.com</a
+                >
+                ,
+                <a href="https://www.projects.co.id" class="text-yellow-500"
+                  >projects.co.id</a
+                >
+                ,
+                <a href="https://www.fiverr.com" class="text-yellow-500">
+                  fiverr.com</a
+                >
+                ,
+                <a href="https://www.fiverr.com" class="text-yellow-500">
+                  fiverr.com</a
+                >
+              </p>
 
-            <button class="card-button group">
-              <p>READ MORE</p>
-              <svg xmlns="http://www.w3.org/2000/svg" class="card-icon" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
+              <button class="card-button group">
+                <p>READ MORE</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="card-icon"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="card">
+              <div class="flex text-sm font-light">
+                <img
+                  src="../asset/benefit-asset/package.png"
+                  alt="suitcase icon"
+                  class="w-16 h-16"
+                />
+              </div>
+
+              <h3 class="card-header">You Can Make Your Own Product</h3>
+
+              <p class="card-info">
+                Have your own idea for an online business? If you're a Fullstack
+                Developer, you don't have to worry. Just build it yourself! Who
+                knows, you might become the next William Tanuwijaya, Achmad
+                Zaky, or
+
+                <a
+                  href="https://id.wikipedia.org/wiki/Nadiem_Makarim"
+                  class="text-yellow-500"
+                >
+                  Nadiem Makarim</a
+                >
+              </p>
+
+              <button class="card-button group">
+                <p>READ MORE</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="card-icon"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="card">
+              <div class="flex text-sm font-light">
+                <img
+                  src="../asset/benefit-asset/display-code.png"
+                  alt="suitcase icon"
+                  class="w-16 h-16"
+                />
+              </div>
+
+              <h3 class="card-header">Skills Needed by Industry</h3>
+
+              <p class="card-info">
+                if you become a Fullstack Developer, at least you will still be
+                needed by the industry. Even Pak Jokowi once said that coding
+                skills would be more important than English in the future. Do
+                not believe? Check
+                <a
+                  href="https://www.cnnindonesia.com/ekonomi/20211013125502-532-707177/jokowi-sebut-ilmu-coding-lebih-penting-dari-bahasa-inggris"
+                  class="text-yellow-500"
+                >
+                  Here!!
+                </a>
+              </p>
+
+              <button class="card-button group">
+                <p>READ MORE</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="card-icon"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="card">
+              <div class="flex text-sm font-light">
+                <img
+                  src="../asset/benefit-asset/walking.png"
+                  alt="suitcase icon"
+                  class="w-16 h-16"
+                />
+              </div>
+
+              <h3 class="card-header">Choose Your Role Job</h3>
+
+              <p class="card-info">
+                If you have expertise in Fullstack Development, you can choose
+                your own job role, whether you want to take on a job as a Front
+                End Developer, Back End Developer, or even Fullstack Developer
+              </p>
+
+              <button class="card-button group">
+                <p>READ MORE</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="card-icon"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="card">
+              <div class="flex text-sm font-light">
+                <img
+                  src="../asset/benefit-asset/money.png"
+                  alt="suitcase icon"
+                  class="w-16 h-16"
+                />
+              </div>
+
+              <h3 class="card-header">Paid with High Salary</h3>
+
+              <p class="card-info">
+                A Fullstack Developer is typically paid around IDR 7 million to
+                IDR 12 million per month in Indonesia, depending on their
+                experience and work location. Check it out here:
+                <a
+                  href="https://www.coursera.org/articles/full-stack-developer-salary"
+                  class="text-yellow-500"
+                >
+                  Fullstack Developer Salary Information</a
+                >
+              </p>
+
+              <button class="card-button group">
+                <p>READ MORE</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="card-icon"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
+      </section>
+      <section class="w-full py-8 bg-secondary">
+        <h1 class="mt-4 mb-8 header-section">
+          Solo Learn vs<span class="ml-2 text-gradient"> CodeLift</span>
+        </h1>
+        <div class="flex flex-wrap items-center p-8 justify-evenly">
+          <div class="bg-card text-white p-8 w-[32rem] rounded-xl">
+            <h2 class="mt-2 text-2xl font-bold text-center">Solo Learn</h2>
+            <hr class="w-[15%] mx-auto mt-2 border border-t-2" />
+            <div class="my-6">
+              <h3 class="card-subheader">Study Method</h3>
+              <p class="font-light">
+                Browsing on your own, from one website to another, from one
+                platform to another.
+              </p>
+            </div>
+            <div class="my-6">
+              <h3 class="card-subheader">Structure and Curriculum</h3>
+              <p class="font-light">
+                you have to search and determine for yourself what material to
+                learn and in what order.
+              </p>
+            </div>
+            <div class="my-6">
+              <h3 class="card-subheader">Mentorship and Guidance</h3>
+              <p class="font-light">
+                If you learn on your own, you have to rely on online resources
+                and communities for support
+              </p>
+            </div>
+            <div class="my-6">
+              <h3 class="card-subheader">Feedback and Assessment</h3>
+              <p class="font-light">
+                if you learn on your own, you have to rely on your own
+                self-assessment and feedback from online communities.
+              </p>
+            </div>
+          </div>
+          <div class="card-codeLift">
+            <h2 class="mt-2 text-2xl font-bold text-center text-gradient">
+              CodeLift
+            </h2>
+            <hr class="w-[15%] mx-auto mt-2 border border-t-2" />
+
+            <div class="my-6">
+              <h3 class="card-subheader">Study Method</h3>
+              <p class="font-light">
+                Following a guided learning path from A-Z, from Zero to Hero,
+                that is designed by experts.
+              </p>
+            </div>
+            <div class="my-6">
+              <h3 class="card-subheader">Structure and Curriculum</h3>
+              <p class="font-light">
+                you will be provided with a well-structured and logically
+                organized curriculum.
+              </p>
+            </div>
+            <div class="my-6">
+              <h3 class="card-subheader">Mentorship and Guidance</h3>
+              <p class="font-light">
+                you will have access to mentors and instructors who can provide
+                guidance and support as you learn.
+              </p>
+            </div>
+            <div class="my-6">
+              <h3 class="card-subheader">Feedback and Assessment</h3>
+              <p class="font-light">
+                you will receive regular feedback and assessments on your
+                work,This can help you identify areas where you need to improve
+                and track your progress
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-gradient-to-l from-secondary to-primary">
+      <div class="max-w-screen-xl px-4 pt-16 pb-10 mx-auto sm:px-6 lg:px-8">
+        <div class="footer-wrapper">
+          <div class="ml-10 lg:ml-0">
+            <img
+              src="../asset/logo.png"
+              class="lg:mr-5 h-10 lg:h-12"
+              alt="logo"
+            />
+            <p class="max-w-xs mt-4 text-sm text-white">
+              The best way to be The Best Programmer in the World
+            </p>
+            <div class="flex mt-8 space-x-6 text-white">
+              <a class="footer-icon" href target="_blank" rel="noreferrer">
+                <span class="sr-only"> Facebook </span>
+                <img
+                  src="../asset/landing-ourteam-page-asset/facebook.png"
+                  alt="facebook"
+                  class="w-6 h-6"
+                />
+              </a>
+              <a class="footer-icon" href target="_blank" rel="noreferrer">
+                <span class="sr-only"> Instagram </span>
+                <img
+                  src="../asset/landing-ourteam-page-asset/instagram.png"
+                  alt="instagram"
+                  class="w-6 h-6"
+                />
+              </a>
+              <a class="footer-icon" href target="_blank" rel="noreferrer">
+                <span class="sr-only"> Twitter </span>
+                <img
+                  src="../asset/landing-ourteam-page-asset/twitter.png"
+                  alt="twitter"
+                  class="w-6 h-6"
+                />
+              </a>
+              <a class="footer-icon" href target="_blank" rel="noreferrer">
+                <span class="sr-only"> GitHub </span>
+                <img
+                  src="../asset/landing-ourteam-page-asset/github.png"
+                  alt="github"
+                  class="w-6 h-6"
+                />
+              </a>
+              <a class="footer-icon" href target="_blank" rel="noreferrer">
+                <span class="sr-only"> Dribbble </span>
+                <img
+                  src="../asset/landing-ourteam-page-asset/dribble.png"
+                  alt="dribble"
+                  class="w-6 h-6"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="footer-link-wrapper">
+            <div class="text-white">
+              <p class="font-medium">Company</p>
+              <div class="footer-anchor-wrapper">
+                <a class="hover:text-yellow-500" href> About </a>
+                <a class="hover:text-yellow-500" href> Meet the Team </a>
+                <a class="hover:text-yellow-500" href> History </a>
+                <a class="hover:text-yellow-500" href> Careers </a>
+              </div>
+            </div>
+            <div class="text-white">
+              <p class="font-medium">Services</p>
+              <div class="footer-anchor-wrapper">
+                <a class="hover:text-yellow-500" href> Company Review </a>
+                <a class="hover:text-yellow-500" href> Accounts Review </a>
+                <a class="hover:text-yellow-500" href> HR Consulting </a>
+                <a class="hover:text-yellow-500" href> SEO Optimisation </a>
+              </div>
+            </div>
+            <div class="text-white">
+              <p class="font-medium">Helpful Links</p>
+              <div class="footer-anchor-wrapper">
+                <a class="hover:text-yellow-500" href> 1 on 1 Coaching </a>
+                <a class="hover:text-yellow-500" href> Contact </a>
+                <a class="hover:text-yellow-500" href> FAQs </a>
+                <a class="hover:text-yellow-500" href> Live Chat </a>
+              </div>
+            </div>
+            <div class="text-white">
+              <p class="font-medium">Legal</p>
+              <div class="footer-anchor-wrapper">
+                <a class="hover:text-yellow-500" href> Privacy Policy </a>
+                <a class="hover:text-yellow-500" href> Terms & Conditions </a>
+                <a class="hover:text-yellow-500" href> Returns Policy </a>
+                <a class="hover:text-yellow-500" href> Accessibility </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="flex-center mt-14 text-sm text-white opacity-60">
+          ©2023 CodeLift All Rights Reserved
+        </p>
       </div>
-    </section>
-    <section class="w-full py-8 bg-secondary">
-      <h1 class="mt-4 mb-8 header-section">
-        Solo Learn vs<span class="ml-2 text-gradient"> CodeLift</span>
-      </h1>
-      <div class="flex flex-wrap items-center p-8 justify-evenly">
-        <div class="bg-card text-white p-8 w-[32rem] rounded-xl">
-          <h2 class="mt-2 text-2xl font-bold text-center">Solo Learn</h2>
-          <hr class="w-[15%] mx-auto mt-2 border border-t-2" />
-          <div class="my-6">
-            <h3 class="card-subheader">Study Method</h3>
-            <p class="font-light">
-              Browsing on your own, from one website to another, from one
-              platform to another.
-            </p>
-          </div>
-          <div class="my-6">
-            <h3 class="card-subheader">Structure and Curriculum</h3>
-            <p class="font-light">
-              you have to search and determine for yourself what material to
-              learn and in what order.
-            </p>
-          </div>
-          <div class="my-6">
-            <h3 class="card-subheader">Mentorship and Guidance</h3>
-            <p class="font-light">
-              If you learn on your own, you have to rely on online resources
-              and communities for support
-            </p>
-          </div>
-          <div class="my-6">
-            <h3 class="card-subheader">Feedback and Assessment</h3>
-            <p class="font-light">
-              if you learn on your own, you have to rely on your own
-              self-assessment and feedback from online communities.
-            </p>
-          </div>
-        </div>
-        <div class="card-codeLift ">
-          <h2 class="mt-2 text-2xl font-bold text-center text-gradient">
-            CodeLift
-          </h2>
-          <hr class="w-[15%] mx-auto mt-2 border border-t-2" />
-
-          <div class="my-6">
-            <h3 class="card-subheader">Study Method</h3>
-            <p class="font-light">
-              Following a guided learning path from A-Z, from Zero to Hero,
-              that is designed by experts.
-            </p>
-          </div>
-          <div class="my-6">
-            <h3 class="card-subheader">Structure and Curriculum</h3>
-            <p class="font-light">
-              you will be provided with a well-structured and logically
-              organized curriculum.
-            </p>
-          </div>
-          <div class="my-6">
-            <h3 class="card-subheader">Mentorship and Guidance</h3>
-            <p class="font-light">
-              you will have access to mentors and instructors who can provide
-              guidance and support as you learn.
-            </p>
-          </div>
-          <div class="my-6">
-            <h3 class="card-subheader">Feedback and Assessment</h3>
-            <p class="font-light">
-              you will receive regular feedback and assessments on your
-              work,This can help you identify areas where you need to improve
-              and track your progress
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="flex items-center justify-center w-full border-none bg-primary">
-    <p class="p-4 m-auto text-white uppercase opacity-60 lg:p-0 lg:my-8">
-      ©2023 CodeLift All Rights Reserved
-    </p>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
