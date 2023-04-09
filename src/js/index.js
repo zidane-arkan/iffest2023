@@ -29,7 +29,8 @@ const classParent = document.getElementById("classesParent");
 
 classes.forEach((item) => {
   const classImage = document.createElement("img");
-  classImage.src = "https://dummyimage.com/720x400";
+  classImage.src =
+    "https://plus.unsplash.com/premium_photo-1661573322713-0935eae5f6a9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80";
   classImage.className = "object-cover object-center w-full h-40 mb-6 rounded";
   classImage.alt = "Classes";
   const divParent = document.createElement("div");

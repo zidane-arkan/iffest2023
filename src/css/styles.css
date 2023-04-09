@@ -133,10 +133,14 @@
   }
 
   .pricing-button {
-    @apply w-full px-4 py-2 mt-6 tracking-wide capitalize transition-colors duration-300 transform rounded-md text-primary bg-yellow-gradient;
+    @apply w-full px-4 py-2 mt-6 tracking-wide capitalize transition-colors duration-300 transform rounded-md text-primary bg-yellow-gradient opacity-90 hover:opacity-100;
+  }
+
+  .owner-wrapper {
+    @apply container flex flex-col justify-center w-full min-h-screen px-6 py-10 mx-auto lg:absolute lg:inset-x-0;
   }
   .footer-link-wrapper {
-    @apply grid grid-cols-2 gap-8 lg:col-span-2 lg:grid-cols-4 place-items-center lg:place-items-start lg:ml-28;
+    @apply grid grid-cols-2 gap-8 lg:col-span-2 md:grid-cols-4 lg:grid-cols-4 place-items-center lg:place-items-start lg:ml-28;
   }
 
   .footer-wrapper {
@@ -224,3 +228,12 @@
   }
 }
 /*** END BENEFIT PAGE ***/
+.animate {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+.animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
