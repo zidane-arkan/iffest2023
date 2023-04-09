@@ -13,6 +13,8 @@ function animateElements() {
     var element = animatedElements[i];
     if (isElementInViewport(element)) {
       element.classList.add("is-visible");
+    } else {
+      element.classList.remove("is-visible");
     }
   }
 }

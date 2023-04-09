@@ -104,6 +104,30 @@
   );
 }
 
+.panel {
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+}
+
+.animated-element {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 0.3s ease-out;
+  -webkit-transition: opacity 1s ease-out, transform 0.3s ease-out;
+  -moz-transition: opacity 1s ease-out, transform 0.3s ease-out;
+  -ms-transition: opacity 1s ease-out, transform 0.3s ease-out;
+  -o-transition: opacity 1s ease-out, transform 0.3s ease-out;
+}
+.animated-element.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @layer base {
   .hero-header {
     @apply flex-center flex-col gap-y-3 text-3xl font-bold text-white lg:text-4xl;
@@ -138,20 +162,6 @@
 
   .owner-wrapper {
     @apply container flex flex-col justify-center w-full min-h-screen px-6 py-10 mx-auto lg:absolute lg:inset-x-0;
-  }
-  .footer-link-wrapper {
-    @apply grid grid-cols-2 gap-8 lg:col-span-2 md:grid-cols-4 lg:grid-cols-4 place-items-center lg:place-items-start lg:ml-28;
-  }
-
-  .footer-wrapper {
-    @apply grid grid-cols-1 gap-8 lg:grid-cols-3 place-items-center lg:place-items-start;
-  }
-
-  .footer-icon {
-    @apply opacity-80 hover:opacity-100 hover:-translate-y-1;
-  }
-  .footer-anchor-wrapper {
-    @apply flex flex-col mt-4 space-y-2 text-sm;
   }
 }
 /*** END LANDING PAGE ***/
@@ -229,26 +239,27 @@
 }
 /*** END BENEFIT PAGE ***/
 
-.panel {
-  overflow: hidden;
-  max-height: 0;
-  transition: all 0.3s ease-in;
-  -webkit-transition: all 0.3s ease-in;
-  -moz-transition: all 0.3s ease-in;
-  -ms-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
+/*** OUR TEAM PAGE ***/
+
+@layer base {
+  .person-wrapper {
+    @apply flex flex-col items-center p-4 border sm:p-6 rounded-xl border-gray-700;
+  }
 }
 
-.animated-element {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease-out, transform 0.3s ease-out;
-  -webkit-transition: opacity 0.5s ease-out, transform 0.3s ease-out;
-  -moz-transition: opacity 0.5s ease-out, transform 0.3s ease-out;
-  -ms-transition: opacity 0.5s ease-out, transform 0.3s ease-out;
-  -o-transition: opacity 0.5s ease-out, transform 0.3s ease-out;
+/*** END OUR TEAM PAGE ***/
+
+.footer-link-wrapper {
+  @apply grid grid-cols-2 gap-8 lg:col-span-2 md:grid-cols-4 lg:grid-cols-4 place-items-center lg:place-items-start lg:ml-28;
 }
-.animated-element.is-visible {
-  opacity: 1;
-  transform: translateY(0);
+
+.footer-wrapper {
+  @apply grid grid-cols-1 gap-8 lg:grid-cols-3 place-items-center lg:place-items-start;
+}
+
+.footer-icon {
+  @apply opacity-80 hover:opacity-100 hover:-translate-y-1;
+}
+.footer-anchor-wrapper {
+  @apply flex flex-col mt-4 space-y-2 text-sm;
 }
