@@ -489,7 +489,7 @@ video {
   }
 }
 
-.hero-feature {
+.hero-icons-wrapper {
   margin-top: 2rem;
   flex-wrap: wrap;
   --tw-text-opacity: 1;
@@ -500,7 +500,7 @@ video {
 }
 
 @media (min-width: 640px) {
-  .hero-feature {
+  .hero-icons-wrapper {
     justify-content: space-between;
   }
 }
